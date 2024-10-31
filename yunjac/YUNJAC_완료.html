@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> YUNJAC_5_ing </title>
+
+<!--font1-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    
+<!--swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+ <!--font2-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+/*font2*/
+.ibm-plex-sans-kr-thin {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.ibm-plex-sans-kr-extralight {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.ibm-plex-sans-kr-light {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ibm-plex-sans-kr-regular {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibm-plex-sans-kr-medium {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ibm-plex-sans-kr-semibold {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.ibm-plex-sans-kr-bold {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+/*font2*/
+
+            /*font1*/
+            .east-sea-dokdo-regular {
+                font-family: "East Sea Dokdo", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            /*font1*/
+        
+        
+                * { margin: 0; padding: 0; box-sizing: border-box;}
+                .wrap { width: 1600px; margin: auto;}
+        
+                .header {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    gap: 1.5rem;
+                    z-index: 90;
+                    position: absolute;
+                    top: 3%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 99;
+                }
+        
+                .logo {
+                    width: 300px;
+                    text-align: center;
+
+                }
+        
+                nav ul { 
+                    width: max-content; margin: auto;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    gap: 1.5rem;
+                }
+        
+                nav li {
+                    list-style: none;
+                    display: inline-block;
+                    padding: 0px 50px;
+                    font-size: 30px;
+
+                }
+
+                nav li:hover {
+                    background-color: blanchedalmond;
+                    border-radius: 50px;
+                    border: 2px solid pink;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    box-shadow: 0 0 5 gray;
+                    text-shadow: 0 0 3 gray;
+                }
+        
+                nav li a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 50px;
+                    font-family: "IBM Plex Sans KR", sans-serif;
+                }
+        
+                main {
+                    background: white;
+                }
+        
+                .bb {
+                    background: url(bestbackground2.jpg) no-repeat;
+                    background-size: 100% 100%;
+                }
+        
+                .best {
+                    height: 800%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    gap: 1.5rem;
+                    padding: 100px 35px;
+                }
+        
+                .b-box {
+                    background: rgba(255, 255, 240, 0.295);
+                    width: 30%; height: 800px;
+                    text-align: center;
+                    font-size: 30px;
+                    padding-top: 40px;
+                    color: rgba(0, 0, 0, 0.363);
+                    font-family: "IBM Plex Sans KR", sans-serif;
+                }
+        
+                .b-box img {
+                    width: 98%;
+                    height: auto;
+                }
+        
+                .new {
+                    height: 1000px;
+                    background: url(newitembg3.jpg)no-repeat;
+                    background-size: 100% 100%;
+                    display: flex;
+                    justify-content: flex-end;
+        
+                }
+        
+                .n-box1 {
+                    background: rgba(247, 244, 245, 0);
+                    width: 40%; height: 800px;
+                    font-size: 40px;
+                    font-family: "IBM Plex Sans KR", sans-serif;
+                    color: rgba(0, 0, 0, 0.363);
+                    text-align: center;
+                    padding-top: 17%;
+                }
+        
+                .st1 {
+                    background: url(background1-2.jpg);
+                    background-size: 100% 100%;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    gap: 1.5rem;
+                }
+        
+                .s1 {
+                    background: rgba(255, 255, 255, 0.199);
+                    text-align: center;
+                    padding-top: 35px;
+                    height: 670px;
+                    margin-top: 150px;
+                    margin-left: 70px; margin-right: 70px;
+                }
+        
+                .s1 img {
+                    width: 90%; height: 90%;    
+                }
+        
+                .st2 {
+                    background: url(background1-2-2.jpg);
+                    background-size: 100% 100%;
+                    height: 970px;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    gap: 1.5rem;
+                }
+        
+                .s2 {
+                    background: rgba(255, 255, 255, 0.199);
+                    padding: 30px;
+                    height: 630px;
+                    margin-top: 150px;
+                    margin-left: 70px; margin-right: 70px;
+                }
+        
+                .recommend {
+                    background: url(background1-2.jpg);
+                    background-size: 100% 100%;
+                    height: 970px;
+                    padding-top: 150px;
+                    text-align: center;
+                }
+        
+                footer {
+                    background:url(background1-2-2.jpg);
+                    background-size: 100% 100%;
+                    height: 385px;
+                    padding-top: 100px;
+                }
+        
+                .ft {
+                    text-align: right;
+                    color: rgb(255, 255, 255);
+                }
+        
+        
+                #bg {
+                    position: relative;
+                    left: 0;
+                    top: -10%;
+                    width: auto;
+                    height: auto;
+                    min-width: 100%;
+                    min-height: 100%;
+                    z-index: -100;
+                }
+
+
+
+
+        main {
+            position: relative;
+            top: 0;
+            height: 98vh;
+            z-index: 0;
+            }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        
+        
+        
+        
+                @media (max-width:600px) {
+                    .wrap { width: 96%;  margin: auto;}
+        
+                    .header, .best, .st1, .s1, .st2, .new {
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        gap: 0.5rem;
+                        margin: auto;
+                        width: 96%;
+                        height: auto;
+                        font-size: 0.8rem;
+                    }
+        
+                    .bb, .recommend, footer {
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        gap: 0.5rem;
+                        margin: auto;
+                        width: 96%;
+                        height: auto;
+                        font-size: 0.8rem;
+                    }
+        
+                    .logo img {
+                        margin: auto;
+                        width: 30%;
+                        height: auto;
+                    }
+        
+                    nav li a {
+                        font-size: 1rem;
+                        width: 96%;
+                        height: auto;
+                    }
+        
+                    nav li {
+                        list-style: none;
+                        padding: 0px 20px;
+                    }
+        
+                    main {
+                        padding-top: 10px;
+                        width: 96%;
+                        height: auto;
+                    }
+        
+                    .mainbg {
+                        font-size: 1.5rem;
+                        text-align: center;
+                        padding-top: 15%;
+                        padding-bottom: 15%;
+                    }
+                    .b-box {
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        gap: 0.5rem;
+                        margin: auto;
+                        width: 96%;
+                        height: auto;
+                        font-size: 0.8rem;
+                        padding: 2%;
+                        padding-bottom: 10%;
+                    }
+        
+                    .n-box1 {
+                        flex-direction: column;
+                        padding: 20% 0;
+                        padding-right: 5%;
+                        text-align: right;
+                        gap: 0.5rem;
+                        width: 96%;
+                        height: auto;
+                        font-size: 0.8rem;
+                    }
+        
+                    .s1 {
+                        padding: 5%;
+                        align-items: center;
+                        height: auto;
+                        margin-bottom: 2%;
+                    }
+        
+                    .s2 {
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        gap: 0.5rem;
+                        margin: auto;
+                        width: 96%;
+                        height: auto;
+                        font-size: 0.8rem;
+                    }
+        
+                    .ft {
+                        font-size: 0.5rem;
+                        line-height: 0.6rem;
+                    }
+        
+                    #bg {
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        gap: 0.5rem;
+                        margin: auto;
+                        width: 96%;
+                        height: auto;
+                        font-size: 0.8rem;
+                    }
+                
+                }
+        
+        
+        
+        
+        
+            </style>
+
+</head>
+<body>
+
+
+
+
+    <main>
+
+        <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="mainbackground2.jpg"></div>
+                    <div class="swiper-slide"><img src="mainbackground3.jpg"></div>
+                    <div class="swiper-slide"><img src="mainbackground4.jpg"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+        
+
+            <div class="header wrap">
+
+                <div class="logo">
+                    <img src="yunjaclogo.png"><!-- logo img -->
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#"> NEW </a></li>
+                        <li><a href="#"> Brand </a></li>
+                        <li><a href="#"> Product </a></li>
+                        <li><a href="#"> Store </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </main>
+
+
+    <section>
+
+        <div class="bb">
+            <div class="best wrap">
+                <div class="b-box"><img src="best1.png"><!-- best 1 img -->
+                    <p>
+                        피부, 더 빛나는 작품으로 <br>
+                        맑고 단단한 도자기 피부를 선사하는 <br>필수 앰플 세럼
+                    </p>
+                </div>
+                <div class="b-box"><img src="best2.png"><!-- best 2 img -->
+                    <p> 
+                        스킨 퍼펙팅 프로텍티브 <br>베이스 프렙 <br>
+                        메이크업의 밀착력과 <br>지속력을 올려주는 밀착 수분 베이스 
+                    </p>
+                </div>
+                <div class="b-box"><img src="best3.png"><!-- best 3 img -->
+                    <p>
+                        카밍&컴포팅 앰플<br>
+                        예민해진 피부에 즉각적인 <br>쿨링감과 편안함을 선사하는 진정 앰플
+                    </p>
+                </div>
+            </div>
+            </div>
+
+
+
+
+        <div class="new">
+            <div class="n-box1">
+                <p>
+                    증숙 말차를 갈아낸 파우더와 엔자임 성분으로<br>
+                    건강하게 각질을 케어하는 <br> 멀티 파우더 클렌저
+                </p>
+            </div>
+        </div>
+
+        <div class="st1">
+            <div class="s1">
+                <img src="item7.jpg">
+            </div>
+            <div class="s1">
+                <img src="item9.jpg">
+            </div>
+            </div>
+        </div>
+
+        <div class="st2">
+            <div class="s2">
+                <img src="item4.jpg">
+            </div>
+            <div class="s2">
+                <img src="item5.jpg">
+            </div>
+            <div class="s2">
+                <img src="item6.jpg">
+            </div>
+        </div>
+
+        
+        <video src="yunjaccf.mp4" autoplay loop muted poster="flame.jpg" id="bg">
+        </video> <!-- 완료 -->
+        
+
+    </section>
+
+    <footer>
+        <div class="ft wrap">
+            <p>
+                (주) 신세계인터내셔날<br><br>
+                대표이사 : KIM WILLIAM PAK<br><br>
+                주소 : 서울특별시 강남구 도산대로 449 (청담동)<br><br>
+                대표전화 : 1644 - 4490<br><br>
+                &copy; 2018 SHINSEGAE INTERNATIONAL.ALL RIGHTS RESERVED
+            </p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+    </script>
+    
+</body>
+</html>
